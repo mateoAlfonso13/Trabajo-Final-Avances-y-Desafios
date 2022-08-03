@@ -1,0 +1,2 @@
+Hacer el home con flexbox y grids, el nav hacerlo con flexbox y el contenido de abajo hacerlo en grids, lo mismo con los demas html
+

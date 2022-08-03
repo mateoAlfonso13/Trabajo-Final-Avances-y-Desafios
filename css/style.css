@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: repeat(3, auto);
+}
+header{
+    grid-area: header;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+}
+nav{
+    width: 2vw;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: cen;
+    font-size: 3vh;
+}
+ul li{
+    padding: 10px;
+}
+ul li a{
+    color: white;
+}
+ul li a:hover{
+    color: goldenrod;
+}
+main{
+    grid-area: main;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Rubik', sans-serif;
+}
+main .titulos{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+
+}
+main .titulos2{
+    display: flex;
+    flex-direction: column;
+}
+
+main h1{
+    font-size: 12vw;
+    justify-content: center;
+    align-items: center;
+}
+main h2{
+    font-size: 5vw;
+}
+main .texto{
+    display: flex;
+    text-align: end;
+    
+}
+
+
+main .img1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* about me*/
+
+.mainAbt{
+    min-height: 100vh;
+}
+
+.titulo2 h1{
+    font-size: 3vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 3vw;
+}
+.contenedor2{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vw;
+}
+
+.contenedor2 p{
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor2 img{
+    width: 15vw;
+    height: 15vw;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*habilidades*/
+.hab{
+    color: white;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+}
+.logoTitulo{
+    color: white;
+}
+.logoSub{
+    color: white;
+}
+.contenedorGeneralHabilidades{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.imgHab{
+    display: flex;
+    width: 400px;
+    padding: 10;
+    border-radius: 50%;
+    padding-top: 50px;
+}
+
+/*Proyectos*/
+
+.contenedorProyecto{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.mainProjects h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    margin: 100px;
+}
+.mainProjects .imperialStarships{
+    width: 50%;
+    height: 500px;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+
+
+
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    font-size: 28px;
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+    background-color: goldenrod;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
+footer p{
+    margin-bottom: 20px;
+    color: black;
+    font-size: 30px;
+}
+footer .redes i{
+    font-size: 30px;
+    color: black;
+    letter-spacing: 15px;
+
+}
+footer .redes i:hover{
+color: white;
+}
+
+@media (max-width:500px){
+    /*inicio*/
+    .titulos{
+        display: flex;
+        flex-direction: column;
+        padding-top: 5vw;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .titulos2 h1{
+        font-size: 20vw;
+    }
+    .titulos2 h2{
+        font-size: 12vw;
+    }
+    .texto{
+        padding-top: 5vw;
+        font-size: 5vw;
+        display: flex;
+        
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media(max-width: 1000px){
+    .texto{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 800px){
+    .titulos{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .titulo2 h1{
+        font-size: 2rem;
+    }
+    .contenedor2 img{
+        width: 300px;
+        height: 150px;
+    }
+    .contenedor2 p{
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width:900px){
+    .contenedor2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .titulo2 h1{
+        font-size: 5vw;
+    }
+}
+@media(max-width:400px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
