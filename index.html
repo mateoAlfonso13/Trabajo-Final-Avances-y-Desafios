@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../media/images/keyboardlogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <title>Mateo Alfonso</title>
 </head>
 <body>
     <header>
+        
         <nav>
             <ul>
                 <li>
@@ -34,15 +37,20 @@
 
     <main class="mainHome">
         <div class="titulos">
-            <div class="titulos2">
+            <div data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
                 <h1>Mateo Alfonso</h1>
                 <h2>Full Stack Developer</h2>
             </div>
-            <div class="texto">
+            <div  data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde temporibus alias minus pariatur libero. Ex corrupti laborum, voluptate sit fugiat placeat aspernatur omnis facilis magni totam, officiis ullam impedit earum laudantium qui fuga incidunt! Non necessitatibus quibusdam quidem accusamus minima enim similique sed ut. Rerum, nisi autem. Fuga similique nobis aliquid quidem repellat recusandae optio, corporis odit ex. Ipsum odio ipsam nulla ab distinctio? Perferendis, corporis saepe earum doloremque beatae possimus eaque minima aspernatur ex esse sit tenetur quisquam accusantium unde fugit qui soluta vero. Similique voluptate placeat eos sequi voluptatibus facere aliquam velit delectus harum numquam. Deserunt error illum excepturi. Corporis explicabo delectus temporibus natus. Earum illo placeat consequatur itaque accusantium asperiores aliquam, maiores ex quis inventore error voluptate recusandae exercitationem distinctio, odit ad necessitatibus et velit nam rerum tempora ab quasi, laboriosam vitae! Ipsam repellendus nesciunt enim quos dolorem ut cum atque doloribus eius at praesentium vel tempora consectetur aperiam inventore, officia temporibus ex ad deleniti explicabo deserunt sequi incidunt? Quia ipsum corrupti itaque! Veniam, sapiente tempora sint eos mollitia consectetur in vero debitis facilis libero praesentium amet eius voluptate, qui velit, quaerat exercitationem aut alias quasi cupiditate. Adipisci rerum modi eaque ipsum, ullam architecto repellendus cupiditate accusantium?</p>
             </div>
         </div>
-        <div class="img1">
+        <div id="teclado" class="animate__animated animate__bounceInUp">
             <img src="media/images/tecladohome.png" alt="tecladoHome">
         </div>
     </main>
@@ -56,5 +64,11 @@
             <a href=""><i class="fa-brands fa-linkedin"></i></a>
         </div>
     </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

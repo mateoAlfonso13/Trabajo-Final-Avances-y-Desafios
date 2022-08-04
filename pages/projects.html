@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../media/images/keyboardlogo.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/style.css">
     <title>Proyectos</title>
@@ -14,24 +15,29 @@
         <nav>
             <ul>
                 <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="abtme.html">Sobre mi</a>
-                </li>
-                <li>
-                    <a href="hab.html">Habilidades</a>
-                </li>
-                <li>
-                    <a href="#contacto">Contacto</a>
-                </li>
+                    <li>
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="abtme.html">Sobre mi</a>
+                    </li>
+                    <li>
+                        <a href="hab.html">Habilidades</a>
+                    </li>
+                    <li>
+                        <a href="projects.html">Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="#contacto">Contacto</a>
+                    </li>
             </ul>
         </nav>
     </header>
 
     <main class="mainProjects">
-        <h1 class="prjTitulo">Mis Proyectos</h1>
-        <div class="contenedorProyecto">
+        <h1 data-aos="zoom-out-right" class="prjTitulo">Mis Proyectos</h1>
+        <div data-aos="fade-up"
+        data-aos-duration="3000" class="contenedorProyecto">
             <img class="imperialStarships" src="../media/images/imperialstarships.PNG" alt="imperialStar">
             <h2><a href=""></a>Imperial Starships</h2>
             <h3>Compra y venta de naves del imperio</h3>
@@ -47,5 +53,9 @@
             <a href=""><i class="fa-brands fa-linkedin"></i></a>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
